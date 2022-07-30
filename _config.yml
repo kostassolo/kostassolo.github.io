@@ -1,6 +1,7 @@
 lsi: false
 safe: true
 source: [kostassolo.github.io]
+indexfile: [index.html]
 incremental: false
 highlighter: rouge
 gist:
