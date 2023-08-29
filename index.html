@@ -2,13 +2,19 @@
   (async () => {
       try {
           await window.sharedStorage.worklet.addModule('experiment.js');
-          await window.sharedStorage.run('send-reach-report', {
+          await window.sharedStorage.run('send-report', {
               data: { campaignId: '1234' },
           });
       } catch (error) {
           console.error("Error:", error);
       }
   })();
+
+   let promise = new Promise((resolve, reject) => {
+                    console.log(this.sharedStorage.remainingBudget());
+
+
+   }
 </script>
 
 
