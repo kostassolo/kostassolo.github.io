@@ -38,4 +38,3 @@ class SendReachReportOperation {
 register('send-reach-report', SendReachReportOperation);
 
 
-              console.log(this.sharedStorage.remainingBudget());
