@@ -1,7 +1,11 @@
 <script type="text/javascript">
   await window.sharedStorage.worklet.addModule('experiment.js');
 
-
+await window.sharedStorage.worklet.addModule('experiment.js');
+await window.sharedStorage.run('send-reach-report', {
+  // optional one-time context
+  data: { campaignId: '1234' },
+});
 
 </script>
 
