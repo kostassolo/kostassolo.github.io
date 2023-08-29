@@ -1,6 +1,6 @@
 <script type="text/javascript">
-
-    
+  (async () => {
+     
           // const ads = await advertiser.getAds();
 
 // Register the worklet module
@@ -10,8 +10,8 @@ await window.sharedStorage.worklet.addModule('experiment.js');
 const xx = await window.sharedStorage.selectURL('creative-selection-by-frequency', 'ads.urls');
 console.log(xx);
           
-    
-
+  
+  })();
 
 
 </script>
