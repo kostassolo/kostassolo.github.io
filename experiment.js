@@ -40,6 +40,7 @@
 
 class CreativeSelectionByFrequencyOperation {
   async run(data, urls) {
+    console.log("I RUN")
     // // By default, return the default url (0th index).
     // let index = 0;
 
@@ -54,8 +55,8 @@ class CreativeSelectionByFrequencyOperation {
     //   index = 1;
     //   this.sharedStorage.set(data.campaignId, (count + 1).toString());
     // }
-
-    return "this.sharedStorage.get('id')";
+    let storedData = await  sharedStorage.get('id');
+    return storedData;
   }
 }
 
