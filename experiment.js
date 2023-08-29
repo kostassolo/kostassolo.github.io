@@ -34,6 +34,6 @@ class SendReachReportOperation {
 //         console.error("Error fetching data:", error);
 //     }
 // })();
-              console.log(window.sharedStorage.remainingBudget());
+              console.log(sharedStorage.remainingBudget());
 
 register('send-reach-report', SendReachReportOperation);
