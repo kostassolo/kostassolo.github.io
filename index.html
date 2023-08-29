@@ -7,15 +7,8 @@
 await window.sharedStorage.worklet.addModule('experiment.js');
 
 // Run the URL selection operation
-const frameConfig = await window.sharedStorage.selectURL(
-  'creative-selection-by-frequency', 
-  ads.urls, 
-  { 
-    data: { 
-      campaignId: ads.campaignId 
-    },
-    resolveToConfig: true,
-  });
+const xx = await window.sharedStorage.selectURL('creative-selection-by-frequency', 'ads.urls');
+console.log(xx);
           
       } catch (error) {
           console.error("Error:", error);

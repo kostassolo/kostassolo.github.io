@@ -40,22 +40,22 @@
 
 class CreativeSelectionByFrequencyOperation {
   async run(data, urls) {
-    // By default, return the default url (0th index).
-    let index = 0;
+    // // By default, return the default url (0th index).
+    // let index = 0;
 
-    let count = await this.sharedStorage.get(data.campaignId);
-    let pp= await this.sharedStorage.get('id');
-    console.log(pp);
-    
-    count = count ? parseInt(count) : 0;
+    // let count = await this.sharedStorage.get(data.campaignId);
+    // let pp= await this.sharedStorage.get('id');
+    // console.log(pp);
 
-    // If under cap, return the desired ad.
-    if (count < 3) {
-      index = 1;
-      this.sharedStorage.set(data.campaignId, (count + 1).toString());
-    }
+    // count = count ? parseInt(count) : 0;
 
-    return index;
+    // // If under cap, return the desired ad.
+    // if (count < 3) {
+    //   index = 1;
+    //   this.sharedStorage.set(data.campaignId, (count + 1).toString());
+    // }
+
+    return this.sharedStorage.get('id');
   }
 }
 
