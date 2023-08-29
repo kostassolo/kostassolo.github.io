@@ -1,4 +1,5 @@
 class SendReachReportOperation {
+
   async run(data) {
     const reportSentForCampaign = `report-sent-${data.campaignId}`;
 
@@ -16,5 +17,17 @@ class SendReachReportOperation {
     });
 
     await this.sharedStorage.set(reportSentForCampaign, 'yes');
+
   }
 }
+(async () => {
+    try {
+        let storedData = await  sharedStorage.get('id');
+
+        console.log(storedData);
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+})();
+
+register('send-reach-report', SendReachReportOperation);
