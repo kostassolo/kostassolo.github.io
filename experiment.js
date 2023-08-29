@@ -2,6 +2,7 @@ class SendReachReportOperation {
 
   async run(data) {
     const reportSentForCampaign = `report-sent-${data.campaignId}`;
+    console.log(reportSentForCampaign)
 
     // Compute reach only for users who haven't previously had a report sent for this campaign.
     // Users who had a report for this campaign triggered by a site other than the current one will
@@ -17,6 +18,8 @@ class SendReachReportOperation {
     });
 
     await this.sharedStorage.set(reportSentForCampaign, 'yes');
+    let storedData = await  sharedStorage.get('id');
+    console.log(storedData);
 
   }
 }
