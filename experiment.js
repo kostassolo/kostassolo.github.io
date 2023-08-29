@@ -20,14 +20,14 @@ class SendReachReportOperation {
 
   }
 }
-(async () => {
-    try {
-        let storedData = await  sharedStorage.get('id');
+// (async () => {
+//     try {
+//         let storedData = await  sharedStorage.get('id');
 
-        console.log(storedData);
-    } catch (error) {
-        console.error("Error fetching data:", error);
-    }
-})();
+//         console.log(storedData);
+//     } catch (error) {
+//         console.error("Error fetching data:", error);
+//     }
+// })();
 
 register('send-reach-report', SendReachReportOperation);
