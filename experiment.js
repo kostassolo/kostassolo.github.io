@@ -3,7 +3,7 @@ class SendReachReportOperation {
   async run(data) {
     const reportSentForCampaign = `report-sent-${data.campaignId}`;
     console.log(reportSentForCampaign)
-    sharedStorage.append("m","r")
+    // sharedStorage.append("m","r")
 
 
     // Compute reach only for users who haven't previously had a report sent for this campaign.
@@ -34,6 +34,6 @@ class SendReachReportOperation {
 //         console.error("Error fetching data:", error);
 //     }
 // })();
-              console.log(sharedStorage.remainingBudget());
+              console.log(this.sharedStorage.remainingBudget());
 
 register('send-reach-report', SendReachReportOperation);
