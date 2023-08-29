@@ -4,12 +4,28 @@
           // const ads = await advertiser.getAds();
 
 // Register the worklet module
+// await window.sharedStorage.worklet.addModule('experiment.js');
+
+// // Run the URL selection operation
+// const xx = await window.sharedStorage.selectURL('creative-selection-by-frequency', 'ads.urls');
+// console.log(xx);
+
+// Register the worklet module
 await window.sharedStorage.worklet.addModule('experiment.js');
 
 // Run the URL selection operation
-const xx = await window.sharedStorage.selectURL('creative-selection-by-frequency', 'ads.urls');
-console.log(xx);
-          
+const frameConfig = await window.sharedStorage.selectURL(
+  'creative-selection-by-frequency', 
+  'acbb', 
+  { 
+    data: { 
+      campaignId: 123
+    },
+    resolveToConfig: true,
+  });
+console.log(frameConfig);
+// Render the frame
+document.getElementById('my-fenced-frame').config = frameConfig;     
   
   })();
 

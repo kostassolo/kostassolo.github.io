@@ -36,28 +36,46 @@
 // // })();
 
 // register('send-reach-report', SendReachReportOperation);
-
-
 class CreativeSelectionByFrequencyOperation {
   async run(data, urls) {
-    console.log("I RUN")
-    // // By default, return the default url (0th index).
-    // let index = 0;
+    // By default, return the default url (0th index).
+    let index = 0;
 
-    // let count = await this.sharedStorage.get(data.campaignId);
-    // let pp= await this.sharedStorage.get('id');
-    // console.log(pp);
+    let count = await this.sharedStorage.get(id);
+    count = count ? parseInt(count) : 0;
 
-    // count = count ? parseInt(count) : 0;
+    // If under cap, return the desired ad.
+    if (count < 3) {
+      index = 1;
+      this.sharedStorage.set(data.campaignId, (count + 1).toString());
+    }
 
-    // // If under cap, return the desired ad.
-    // if (count < 3) {
-    //   index = 1;
-    //   this.sharedStorage.set(data.campaignId, (count + 1).toString());
-    // }
-    // let storedData = await  this.sharedStorage.get('id');
-    return ;
+    return count;
   }
 }
 
 register('creative-selection-by-frequency', CreativeSelectionByFrequencyOperation);
+
+// class CreativeSelectionByFrequencyOperation {
+//   async run(data, urls) {
+//     console.log("I RUN")
+//     // // By default, return the default url (0th index).
+//     // let index = 0;
+
+//     // let count = await this.sharedStorage.get(data.campaignId);
+//     // let pp= await this.sharedStorage.get('id');
+//     // console.log(pp);
+
+//     // count = count ? parseInt(count) : 0;
+
+//     // // If under cap, return the desired ad.
+//     // if (count < 3) {
+//     //   index = 1;
+//     //   this.sharedStorage.set(data.campaignId, (count + 1).toString());
+//     // }
+//     // let storedData = await  this.sharedStorage.get('id');
+//     return ;
+//   }
+// }
+
+// register('creative-selection-by-frequency', CreativeSelectionByFrequencyOperation);
