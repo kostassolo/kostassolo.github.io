@@ -55,7 +55,7 @@ class CreativeSelectionByFrequencyOperation {
     //   this.sharedStorage.set(data.campaignId, (count + 1).toString());
     // }
 
-    return this.sharedStorage.get('id');
+    return "this.sharedStorage.get('id')";
   }
 }
 
