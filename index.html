@@ -14,7 +14,7 @@
 await window.sharedStorage.worklet.addModule('experiment.js');
 
 // Run the URL selection operation
-const frameConfig = await window.sharedStorage.selectURL(
+const frameConfig = await window.selectURL(
   'creative-selection-by-frequency', 
   'acbb', 
   { 
