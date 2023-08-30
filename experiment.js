@@ -4,8 +4,10 @@ class Rep {
     let storedData = await  sharedStorage.get('id');
     console.log("storage run")
     console.log(storedData);
+    let bb = await sharedStorage.remainingBudget();
     console.log(typeof storedData);
     console.log(len(storedData));
+    console.log(bb)
     return 1234
    }
 }
