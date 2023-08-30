@@ -1,7 +1,7 @@
 class Rep {
   // See previous examples for how to write a `run()` operation class.
   async run() { 
-    let storedData = await  sharedStorage.get('id');
+    let storedData = await  sharedStorage.get('m');
     console.log("storage run")
     console.log(storedData);
     let bb = await sharedStorage.remainingBudget();
