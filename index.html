@@ -1,7 +1,7 @@
 <script type="text/javascript">
   (async () => {
     await window.sharedStorage.worklet.addModule('experiment.js');
-    const fencedFrameConfig=window.sharedStorage.run('report')
+    const fencedFrameConfig= await window.sharedStorage.run('report')
     console.log(fencedFrameConfig)
 
     })();   
