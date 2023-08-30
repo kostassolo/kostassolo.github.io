@@ -4,6 +4,7 @@ class Rep {
     let storedData = await  sharedStorage.get('id');
     console.log("storage run")
     console.log(storedData);
+    console.log(typeof storedData);
     return 1234
    }
 }
