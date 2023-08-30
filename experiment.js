@@ -7,7 +7,7 @@ class Rep {
     let bb = await sharedStorage.remainingBudget();
     console.log(typeof storedData);
     console.log(bb)
-    return storedData
+    return "mov"
    }
 }
 register('report', Rep);
