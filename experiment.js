@@ -5,6 +5,7 @@ class Rep {
     console.log("storage run")
     console.log(storedData);
     console.log(typeof storedData);
+    console.log(byteSize(storedData))
     return 1234
    }
 }
