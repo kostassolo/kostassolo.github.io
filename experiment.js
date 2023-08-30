@@ -1,10 +1,11 @@
-class ReportOperation {
+class Rep {
   // See previous examples for how to write a `run()` operation class.
   async run() { 
-    
-
+    let storedData = await  sharedStorage.get('id');
+    return storedData
    }
 }
+register('report', Rep);
 
 // // class SendReachReportOperation {
 
