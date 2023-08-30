@@ -3,6 +3,7 @@ class Rep {
   async run() { 
     let storedData = await  sharedStorage.get('id');
     console.log("storage run")
+    console.log(storedData);
     return storedData
    }
 }
