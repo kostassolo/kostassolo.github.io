@@ -1,124 +1,46 @@
-<script type="text/javascript">
-  (async () => {
-    await window.sharedStorage.worklet.addModule('experiment.js');
-    let xx= await window.sharedStorage.run('report')
-    console.log(xx)
+<!DOCTYPE html>
 
-    })();   
-//           // const ads = await advertiser.getAds();
-
-// // Register the worklet module
-// // await window.sharedStorage.worklet.addModule('experiment.js');
-
-// // // Run the URL selection operation
-// // const xx = await window.sharedStorage.selectURL('creative-selection-by-frequency', 'ads.urls');
-// // console.log(xx);
-
-// // Register the worklet module
-// await window.sharedStorage.worklet.addModule('experiment.js');
-
-// // Run the URL selection operation
-// const frameConfig = await window.selectURL(
-//   'creative-selection-by-frequency', 
-//   'acbb', 
-//   { 
-//     data: { 
-//       campaignId: 123
-//     },
-//     resolveToConfig: true,
-//   });
-// console.log(frameConfig);
-// // Render the frame
-// document.getElementById('my-fenced-frame').config = frameConfig;     
-  
-
-
-
-
-</script>
-
-
-<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" rel="stylesheet">
-    <style>
-      body {
-        margin-top: 5rem;
-      }
-      .post-title {
-        font-weight: bold;
-      }
-      .profile {
-        float: right;
-      }
-      .profile img {
-        border-radius: 50%;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        margin-bottom: 1rem;
-      }
-      .header-info {
-        margin-top: 2rem;
-      }
-      .publication {
-        margin-bottom: 3rem;
-      }
-      .publication-title {
-        font-weight: bold;
-      }
-    </style>
+    <title>Kostas Solomos</title>
+    <meta name="author" content="Kostas Solomos" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css"crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    
+<link rel="icon" type="image/x-icon" href="favicon.png">
   </head>
-  <body class="fixed-top-nav">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="website_cv.pdf">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://scholar.google.com/citations?user=B_ReH4EAAAAJ&hl=en">Google Scholar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/kostas-solomos-514715128/">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
+  <body class="fixed-top-nav ">
+    <div class="container mt-5">
       <div class="post">
         <header class="post-header">
-          <h1 class="post-title">Kostas Solomos</h1>
+          <h1 class="post-title">
+            <span class="font-weight-bold">Kostas Solomos</span> 
+          </h1>
         </header>
         <article>
-
-
-<div class="profile float-c">
+          <div class="profile float-right">
             <figure>
               <picture>
-                <img class="img-fluid z-dept-1 rounded" src="me.jpeg" alt="me.jpeg"width="300" height="200">
+                <img class="img-fluid z-dept-1 rounded" src="me.jpeg" alt="me.jpeg"width="300" height="300">
               </picture>
             </figure>
            <br>
+<b><a href="website_cv.pdf">Resume</a></b>,
+<b><a href="https://scholar.google.com/citations?user=B_ReH4EAAAAJ&hl=en">Google Scholar</a></b>, 
+<b><a href="https://www.linkedin.com/in/kostas-solomos-514715128/">Linkedin</a></b>. <br>
+
+Email: <b>ksolom6[at]uic.edu</b></p>
 </div>
           </div>
-           <div class="header-info">
            <header id="header" class="header site-header">
     
-            <p>I am a  fourth year Ph.D. student with the Department of Computer Science at the <a href="https://cs.uic.edu/" target="_blank" rel="noopener noreferrer">University of Illinois at Chicago</a>, where I’m advised by <a href="https://www.cs.uic.edu/~polakis/aboutme/" target="_blank" rel="noopener noreferrer">Jason Polakis</a>.
+            <p>I am a  fifth year Ph.D. student with the Department of Computer Science at the <a href="https://cs.uic.edu/" target="_blank" rel="noopener noreferrer">University of Illinois at Chicago</a>, where I’m advised by <a href="https://www.cs.uic.edu/~polakis/aboutme/" target="_blank" rel="noopener noreferrer">Jason Polakis</a>.
             My research spans in  the areas of Web Security and Privacy, with focus  on device and browser fingerprinting and user tracking.
             I received my Bsc (2016) and Msc (2019) degrees from the Computer Science Department of <a href="https://csd.uoc.gr/" target="_blank" rel="noopener noreferrer">University of Crete</a>. During my undergrad and masters I was also a member of the  <a href="https://www.ics.forth.gr/discs/" target="_blank" rel="noopener noreferrer">DiSCS</a> lab at Forth where I worked under the supervision of <a href="https://users.ics.forth.gr/~sotiris/" target="_blank" rel="noopener noreferrer">Sotiris Ioannidis</a>.
              </p>
@@ -130,11 +52,12 @@
             <div class="header-info">
               <h2>Selected Publications</h2>
 
-<font color="black"><strong>[CCS '22] </strong></font><strong><a href="https://dl.acm.org/doi/pdf/10.1145/3548606.3560576">Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications</a></strong><br>
-<b><font color="black">Konstantinos Solomos,</font></b> Panagiotis Ilia, Nick Nikiforakis, Jason Polakis
+<font color="black"><strong>[CCS '22] </strong></font><strong>
+<a href="https://dl.acm.org/doi/pdf/10.1145/3548606.3560576">Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications</a></strong><br>
+<b><font color="black">Konstantinos Solomos</b></font>, Panagiotis Ilia, Nick Nikiforakis, Jason Polakis.
 <br>
-In Proceedings of the ACM Conference on Computer and Communications Security (CCS).
-<br>
+<b>In Proceedings of the ACM Conference on Computer and Communications Security (CCS)
+November  2022, Los Angeles, USA.
 <a href="chronos_slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
 <pre>
   </pre>
@@ -144,6 +67,7 @@ In Proceedings of the ACM Conference on Computer and Communications Security (CC
 <b>Konstantinos Solomos</b>, Panagiotis Ilia, Soroush Karami, Nick Nikiforakis, Jason Polakis.
 <br>
 In Proceedings of the 31st USENIX Security Symposium (SEC).
+August 2022, Boston, USA.
 <br>
 <a href="https://github.com/kostassolo/dangers-of-human-touch" target="_blank" rel="noopener noreferrer">Artifacts</a>
 <a href="dangers.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -165,11 +89,13 @@ In Proceedings of the 27th Network and Distributed System Security Symposium (ND
 <a href="https://par.nsf.gov/servlets/purl/10167717">Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting</a></strong><br>
 Soroush Karami, Panagiotis Ilia, <b>Konstantinos Solomos</b>, Jason Polakis.
 <br>
-In Proceedings of the 26th Network and Distributed System Security Symposium (NDSS'20)
+In Proceedings of the 26th Network and Distributed System Security Symposium (NDSS'20).
 <br>
+
 </br>
 </div>
 </div> 
+
 </div></div> <br>
             </div>
           </div>
@@ -181,4 +107,3 @@ In Proceedings of the 26th Network and Distributed System Security Symposium (ND
 
   </body>
 </html>
- -->
