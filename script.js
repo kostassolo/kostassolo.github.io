@@ -2,7 +2,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Your code to register an iframe in the app
   const iframe = document.createElement('iframe');
-  iframe.src = '/Users/kostassolomos/Desktop/electron/csp_testing_scriptsrc/external.html';
+  // iframe.src = '/Users/kostassolomos/Desktop/electron/csp_testing_scriptsrc/external.html';
+  iframe.src = 'https://www.example.com';
+
   document.body.appendChild(iframe);
 });
 
