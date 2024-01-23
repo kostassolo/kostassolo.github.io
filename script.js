@@ -14,13 +14,13 @@
 // Create a Web Worker (simplified example)
 
 
-const worker = new Worker('./worker.js');
+// const worker = new Worker('./worker.js');
 
 // Send a message to the main thread via IPC
-worker.postMessage({ source: 'third-party', data: 'Hello from third-party!' });
+window.postMessage({ source: 'third-party', data: 'Hello from third-party!' }, '*');
 
 // Listen for messages from the Web Worker (if any)
-worker.onmessage = (event) => {
-  const messageFromWorker = event.data;
-  console.log('Message from Web Worker:', messageFromWorker);
-};
+// worker.onmessage = (event) => {
+//   const messageFromWorker = event.data;
+//   console.log('Message from Web Worker:', messageFromWorker);
+// };
