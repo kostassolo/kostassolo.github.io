@@ -1,1 +1,1 @@
-self.postMessage({ data: 'Hello from Web Worker!' });
+self.postMessage({ source: 'web-worker', data: 'Hello from Web Worker!' });
