@@ -14,7 +14,7 @@
 // Create a Web Worker (simplified example)
 
 
-const worker = new Worker('worker.js');
+const worker = new Worker('./worker.js');
 
 // Send a message to the main thread via IPC
 worker.postMessage({ source: 'third-party', data: 'Hello from third-party!' });
