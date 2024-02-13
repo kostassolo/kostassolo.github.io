@@ -34,7 +34,9 @@
 const ftpURL = "ftp://localhost:9999/external.html";
 window.open(ftpURL, '_blank');
 const iframe = document.createElement('iframe');
-iframe.src = 'file://Downloads/external.html';
+// iframe.src = 'file://Downloads/external.html';
+iframe.src = 'example.com';
+
 iframe.style.width = '50%';
 iframe.style.height = '50%';
 
@@ -46,5 +48,5 @@ if (!container) {
 }
 container.appendChild(iframe);
 const parentWindow = iframe.contentWindow.parent;
-console.log('Parent window:', parentWindow);
+// console.log('Parent window:', parentWindow);
 iframe.contentWindow.parent.document.body.style.backgroundColor='red'
