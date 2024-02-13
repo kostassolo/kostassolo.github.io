@@ -49,4 +49,4 @@ if (!container) {
 container.appendChild(iframe);
 const parentWindow = iframe.contentWindow.parent;
 // console.log('Parent window:', parentWindow);
-iframe.contentWindow.parent.document.body.style.backgroundColor='red'
+// iframe.contentWindow.parent.document.body.style.backgroundColor='red'
