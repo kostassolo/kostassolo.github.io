@@ -35,7 +35,7 @@ const ftpURL = "ftp://localhost:9999/external.html";
 window.open(ftpURL, '_blank');
 const iframe = document.createElement('iframe');
 // iframe.src = 'file://Downloads/external.html';
-iframe.src = 'example.com';
+iframe.src = 'https://example.com';
 
 iframe.style.width = '50%';
 iframe.style.height = '50%';
