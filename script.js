@@ -17,11 +17,12 @@ function loadContentIntoIframe() {
     iframe.srcdoc = htmlContent;
 
     // Append the iframe to the container element in the document
-    const iframeContainer = document.getElementById('iframeContainer');
-    if (!iframeContainer) {
-        console.error('Iframe container not found');
-        return;
-    }
+    const iframeContainer = document.createElement('div');
+    iframeContainer.id = 'iframeContainer'; // Set the id
+    document.body.appendChild(iframeContainer); // Append to the body
+
+
+
     iframeContainer.innerHTML = ''; // Clear previous content
     iframeContainer.appendChild(iframe);
 }
