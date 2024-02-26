@@ -1,32 +1,45 @@
+function loadContentIntoIframe() {
+    const filename = 'page.html'; // Specify the filename used for saving in local storage
 
-// const ftpURL = "ftp://localhost:9999/external.html";
-// window.open(ftpURL, '_blank');
-var result = window.confirm("Do you want to proceed?");
-if (result === true) {
-    // User clicked "OK", proceed with the action
-    console.log("User confirmed.");
-} else {
-    // User clicked "Cancel" or closed the dialog box
-    console.log("User cancelled.");
+    // Retrieve HTML content from local storage
+    const htmlContent = localStorage.getItem(filename);
+    if (!htmlContent) {
+        console.error(`No HTML content found for ${filename}`);
+        return;
+    }
+
+    // Create an iframe element
+    const iframe = document.createElement('iframe');
+    iframe.style.width = '100%';
+    iframe.style.height = '500px'; // Adjust the height as needed
+
+    // Set the HTML content retrieved from local storage as the source document of the iframe
+    iframe.srcdoc = htmlContent;
+
+    // Append the iframe to the container element in the document
+    const iframeContainer = document.getElementById('iframeContainer');
+    if (!iframeContainer) {
+        console.error('Iframe container not found');
+        return;
+    }
+    iframeContainer.innerHTML = ''; // Clear previous content
+    iframeContainer.appendChild(iframe);
 }
 
+function saveHTMLLocally(url, filename) {
+    fetch(url)
+        .then(response => response.text())
+        .then(htmlContent => {
+            localStorage.setItem(filename, htmlContent);
+            console.log(`HTML page saved locally as ${filename}`);
+            loadContentIntoIframe(); // Call loadContentIntoIframe after saving HTML
+        })
+        .catch(error => {
+            console.error('Error fetching or saving HTML page:', error);
+        });
+}
 
-
-
-// const iframe = document.createElement('iframe');
-// // iframe.src = 'file://Downloads/external.html';
-// iframe.src = 'https://example.com';
-
-// iframe.style.width = '50%';
-// iframe.style.height = '50%';
-
-// let container = document.getElementById('iframeContainer');
-// if (!container) {
-//   container = document.createElement('div');
-//   container.id = 'iframeContainer';
-//   document.body.appendChild(container);
-// }
-// container.appendChild(iframe);
-// const parentWindow = iframe.contentWindow.parent;
-// console.log('Parent window:', parentWindow);
-// iframe.contentWindow.parent.document.body.style.backgroundColor='red'
+// Example usage:
+const url = 'https://kostassolo.github.io/page.html';
+const filename = 'page.html';
+saveHTMLLocally(url, filename);
