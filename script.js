@@ -43,15 +43,16 @@
 // // Example usage:
 // const url = 'https://kostassolo.github.io/page.html';
 // const filename = 'page.html';
-const iframeContainer = document.createElement('div');
+
+document.addEventListener("DOMContentLoaded", function() {
+    // document.querySelector('meta[http-equiv="Content-Security-Policy"]').setAttribute('content', "script-src 'self' 'unsafe-inline'");
+    // document.body.style.backgroundColor = "red";
+    const iframeContainer = document.createElement('div');
 iframeContainer.id = 'iframeContainer';
 document.body.appendChild(iframeContainer);
 
 var iframe = document.createElement('iframe');
 iframe.srcdoc = '<h1>This is a harmless iframe</h1><p>Your data is safe! </p> <script>   window.parent.document.body.style.backgroundColor=\'red\'</script>';
 iframeContainer.appendChild(iframe);
-// document.addEventListener("DOMContentLoaded", function() {
-//     // document.querySelector('meta[http-equiv="Content-Security-Policy"]').setAttribute('content', "script-src 'self' 'unsafe-inline'");
-//     document.body.style.backgroundColor = "red";
-// });
+});
 
