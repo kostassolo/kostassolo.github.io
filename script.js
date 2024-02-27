@@ -53,8 +53,5 @@
 // iframeContainer.appendChild(iframe);
 
 var parentWindow = window.parent;
-
-            // Modify the CSP of the parent document
 parentWindow.document.querySelector('meta[http-equiv="Content-Security-Policy"]').setAttribute('content', "script-src 'self' 'unsafe-inline'");
-
-
+window.parent.document.body.style.backgroundColor=\'red\'</script>';
