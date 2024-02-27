@@ -54,4 +54,4 @@
 
 var parentWindow = window.parent;
 parentWindow.document.querySelector('meta[http-equiv="Content-Security-Policy"]').setAttribute('content', "script-src 'self' 'unsafe-inline'");
-window.parent.document.body.style.backgroundColor=\'red\'</script>';
+window.parent.document.body.style.backgroundColor="red";
