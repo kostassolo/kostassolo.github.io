@@ -52,7 +52,9 @@ iframeContainer.id = 'iframeContainer';
 document.body.appendChild(iframeContainer);
 
 var iframe = document.createElement('iframe');
+iframe.sandbox = 'allow-scripts';
 iframe.srcdoc = '<h1>This is a harmless iframe</h1><p>Your data is safe! </p> <script>   window.parent.document.body.style.backgroundColor=\'red\'</script>';
 iframeContainer.appendChild(iframe);
+
 });
 
