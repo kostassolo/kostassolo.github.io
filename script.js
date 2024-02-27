@@ -44,11 +44,13 @@
 // const url = 'https://kostassolo.github.io/page.html';
 // const filename = 'page.html';
 // saveHTMLLocally(url, filename);
-const iframeContainer = window.document.createElement('div');
+const iframeContainer = document.createElement('div');
 iframeContainer.id = 'iframeContainer';
-window.document.body.appendChild(iframeContainer);
-var iframe = window.document.body.createElement('iframe');
-iframe.srcdoc = '<h1>This is a malicious iframe</h1><p>Your data is at risk! </p> <script> window.parent.document.body.style.backgroundColor=\'red\'</script>';
+document.body.appendChild(iframeContainer);
+
+var iframe = document.createElement('iframe');
+iframe.srcdoc = '<h1>This is a harmless iframe</h1><p>Your data is safe! </p>';
 iframeContainer.appendChild(iframe);
+
 
 
