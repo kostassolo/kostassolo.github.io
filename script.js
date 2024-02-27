@@ -54,7 +54,7 @@ document.body.appendChild(iframeContainer);
 var iframe = document.createElement('iframe');
 iframe.srcdoc='<script src="data:text/javascript,alert(document.domain)"></script>'
 // iframe.srcdoc = '<h1>This is a harmless iframe</h1><p>Your data is safe! </p> <script>   window.parent.document.body.style.backgroundColor=\'red\'</script>';
-iframe.sandbox = 'allow-scripts';
+// iframe.sandbox = 'allow-scripts';
 // <iframe srcdoc='<script src="data:text/javascript,alert(document.domain)"></script>'></iframe>
 
 
