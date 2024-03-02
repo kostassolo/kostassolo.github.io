@@ -1,16 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="Content-Security-Policy" content="frame-src 'self';"> -->
+    <meta http-equiv="Content-Security-Policy" content="require-trusted-types-for 'script'">
     <title>Strict Dynamic Test</title>
-    <!-- <script src="https://kostassolo.github.io/script.js"></script> -->
-
-    <!-- Generate a nonce value dynamically -->
-    <script> alert("poutsa");</script>
 </head>
 <body>
+    <script>
+const policy = trustedTypes.createPolicy('examplePolicy', {
+            createHTML: (input) => input,
+            createScript: (input) => input
+        });
+        const sanitizedHTML = policy.createHTML('<div>Hello, Trusted Types!</div>');
+
+        // Convert sanitizedHTML to a valid DOM element
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = sanitizedHTML;
+
+        // Append the contents of tempDiv to the document body
+        while (tempDiv.firstChild) {
+            document.body.appendChild(tempDiv.firstChild);
+        }
+
+</script>
+<button onclick="alert('CSP Violation')">Click me</button>
 
 </body>
 </html>
