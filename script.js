@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!DOCTYPE html>
     <html lang='en'>
     <body>
-    <iframe src="https://www.google.com" style="width: 100%; height: 500px;"></iframe>
+    <iframe src="https://www.example.com" style="width: 100%; height: 500px;"></iframe>
     </body>
     </html>
   `;
