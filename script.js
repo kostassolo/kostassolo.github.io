@@ -2,20 +2,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const iframeContainer = document.getElementById('iframe-container');
   const iframe = document.createElement('iframe');
 
-  // Set the srcdoc content
+  // Set the srcdoc content with inline JavaScript to read cookies
   iframe.srcdoc = `
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang='en'>
     <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
       <title>Injected Iframe</title>
     </head>
     <body>
-      <h2>Content inside iframe</h2>
+      <h2>Iframe Content</h2>
       <p>This iframe was injected by a script.</p>
+      <p id='cookie-info'></p>
+      <script>
+        // Function to read cookies
+        function getCookie(name) {
+          const value = \`;\${document.cookie}\`;
+          const parts = value.split(\`;\${name}=\`);
+          if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        // Display cookie information
+        const username = getCookie('username');
+        const sessionToken = getCookie('sessionToken');
+        document.getElementById('cookie-info').innerText = 
+          'Username: ' + username + ', Session Token: ' + sessionToken;
+      </script>
     </body>
-    <script>alert(document.cookie)</script>
     </html>
   `;
 
