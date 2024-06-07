@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <h2>Content inside iframe</h2>
       <p>This iframe was injected by a script.</p>
     </body>
-    <script>alert(document.cookies)</script>
+    <script>alert(document.cookie)</script>
     </html>
   `;
 
