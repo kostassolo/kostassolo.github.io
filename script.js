@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p id='cookie-info'></p>
       <script>
         // Function to read cookies
+      alert(document.cookie)
         function getCookie(name) {
           const value = \`;\${document.cookie}\`;
           const parts = value.split(\`;\${name}=\`);
