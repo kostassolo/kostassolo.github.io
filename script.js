@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Create the iframe element
     var iframe = document.createElement('iframe');
+    iframe.sandbox = 'allow-scripts'
     iframe.srcdoc = `
         <html>
             <head>
