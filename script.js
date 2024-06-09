@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <head>
                 <script>
                     // Log the iframe's cookies to the console
-                    console.log('Iframe gitbub cookies: ' + document.cookie);
+                    console.log('Iframe from github read cookies: ' + document.cookie);
                     // Log the iframe's origin to the console
-                    console.log('Iframe  gitbub origin: ' + window.origin);
+                    console.log('Iframe  from github read origin: ' + document.domain);
                 <\/script>
             </head>
             <body>
