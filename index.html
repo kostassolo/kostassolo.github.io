@@ -25,12 +25,11 @@
         body {
             background-color: var(--background-color);
             color: var(--text-color);
-            font-family: 'Open Sans', sans-serif;
-            padding: 20px;
+            font-family: 'Roboto', sans-serif;
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Slab', serif;
             color: var(--primary-color);
         }
 
@@ -43,38 +42,37 @@
             color: var(--primary-color);
         }
 
-        button {
-            background-color: var(--secondary-color);
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: var(--accent-color);
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             background-color: var(--background-color);
-            z-index: 1000;
-        }
-
-        .header {
             text-align: center;
-            padding: 20px 0;
         }
 
-        .profile img {
+        .hero-section h1 {
+            font-size: 3em;
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            font-size: 1.5em;
+        }
+
+        .profile-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .profile-section img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            margin-bottom: 20px;
         }
 
-        .container {
+        .content-section {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -83,122 +81,65 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .loading {
-            border: 4px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 4px solid var(--primary-color);
-            width: 40px;
-            height: 40px;
-            animation: spin 2s linear infinite;
-            margin: 20px auto;
+        .content-section h2 {
+            margin-top: 20px;
         }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+        .content-section p {
+            line-height: 1.6;
         }
 
-        .lazy-load {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            .container {
-                padding: 10px;
-            }
-
-            .profile img {
-                width: 100px;
-                height: 100px;
-            }
-
-            h1 {
-                font-size: 1.5em;
-            }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--background-color);
         }
     </style>
 </head>
 
-<body class="fixed-top-nav">
-    <div class="container mt-5">
-        <header class="header">
-            <h1 class="post-title">
-                <span class="font-weight-bold">Kostas Solomos</span>
-            </h1>
-            <div class="profile">
-                <img src="me.jpeg" alt="Kostas Solomos" class="lazy-load">
-                <br>
-                <b><a href="website_cv.pdf">Resume</a></b>,
-                <b><a href="https://scholar.google.com/citations?user=B_ReH4EAAAAJ&hl=en">Google Scholar</a></b>,
-                <b><a href="https://www.linkedin.com/in/kostas-solomos-514715128/">Linkedin</a></b>.
-                <br>
-                Email: <b>ksolom6[at]uic.edu</b>
-            </div>
-            <p>
-                I am a fifth year Ph.D. student with the Department of Computer Science at the <a href="https://cs.uic.edu/" target="_blank" rel="noopener noreferrer">University of Illinois at Chicago</a>, where I’m advised by <a href="https://www.cs.uic.edu/~polakis/aboutme/" target="_blank" rel="noopener noreferrer">Jason Polakis</a>. My research spans in the areas of Web Security and Privacy, with focus on device and browser fingerprinting and user tracking. I received my Bsc (2016) and Msc (2019) degrees from the Computer Science Department of <a href="https://csd.uoc.gr/" target="_blank" rel="noopener noreferrer">University of Crete</a>. During my undergrad and masters I was also a member of the <a href="https://www.ics.forth.gr/discs/" target="_blank" rel="noopener noreferrer">DiSCS</a> lab at Forth where I worked under the supervision of <a href="https://users.ics.forth.gr/~sotiris/" target="_blank" rel="noopener noreferrer">Sotiris Ioannidis</a>.
-            </p>
-        </header>
-        <main>
-            <section>
-                <h2>Selected Publications</h2>
-                <p>
-                    <strong>[CCS '22]</strong>
-                    <a href="https://dl.acm.org/doi/pdf/10.1145/3548606.3560576">Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications</a>
-                    <br>
-                    <b>Konstantinos Solomos</b>, Panagiotis Ilia, Nick Nikiforakis, Jason Polakis.
-                    <br>
-                    In Proceedings of the ACM Conference on Computer and Communications Security (CCS), November 2022, Los Angeles, USA.
-                    <br>
-                    <a href="chronos_slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
-                </p>
-                <p>
-                    <strong>[SEC '22]</strong>
-                    <a href="https://www.usenix.org/system/files/sec22fall_solomos.pdf">The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions</a>
-                    <br>
-                    <b>Konstantinos Solomos</b>, Panagiotis Ilia, Soroush Karami, Nick Nikiforakis, Jason Polakis.
-                    <br>
-                    In Proceedings of the 31st USENIX Security Symposium (SEC), August 2022, Boston, USA.
-                    <br>
-                    <a href="https://github.com/kostassolo/dangers-of-human-touch" target="_blank" rel="noopener noreferrer">Artifacts</a>
-                    <a href="dangers.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
-                </p>
-                <p>
-                    <strong>[NDSS '21]</strong>
-                    <a href="https://par.nsf.gov/servlets/purl/10268961">Tales of Favicons and Caches: Persistent Tracking in Modern Browsers</a>
-                    <br>
-                    <b>Konstantinos Solomos</b>, John Kristoff, Chris Kanich, Jason Polakis.
-                    <br>
-                    In Proceedings of the 27th Network and Distributed System Security Symposium (NDSS 21').
-                    <br>
-                    <a href="favicon_pres.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
-                    <a href="https://arstechnica.com/information-technology/2021/02/new-browser-tracking-hack-works-even-when-you-flush-caches-or-go-incognito/" target="_blank" rel="noopener noreferrer">Media Coverage</a>
-                    <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1861" style="color:#FF0000;">CVE-2021-1861</a>
-                </p>
-                <p>
-                    <strong>[NDSS '20]</strong>
-                    <a href="https://par.nsf.gov/servlets/purl/10167717">Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting</a>
-                    <br>
-                    Soroush Karami, Panagiotis Ilia, <b>Konstantinos Solomos</b>, Jason Polakis.
-                    <br>
-                    In Proceedings of the 26th Network and Distributed System Security Symposium (NDSS'20).
-                </p>
-            </section>
-        </main>
+<body>
+    <div class="hero-section">
+        <div>
+            <h1>Kostas Solomos</h1>
+            <p>Ph.D. Student in Computer Science</p>
+        </div>
     </div>
+
+    <div class="profile-section">
+        <img src="me.jpeg" alt="Kostas Solomos" class="img-fluid">
+        <br>
+        <b><a href="website_cv.pdf">Resume</a></b>,
+        <b><a href="https://scholar.google.com/citations?user=B_ReH4EAAAAJ&hl=en">Google Scholar</a></b>,
+        <b><a href="https://www.linkedin.com/in/kostas-solomos-514715128/">LinkedIn</a></b>.
+    </div>
+
+    <div class="content-section">
+        <section>
+            <h2>Biography</h2>
+            <p>I am a fifth year Ph.D. student with the Department of Computer Science at the <a href="https://cs.uic.edu/" target="_blank" rel="noopener noreferrer">University of Illinois at Chicago</a>, where I’m advised by <a href="https://www.cs.uic.edu/~polakis/aboutme/" target="_blank" rel="noopener noreferrer">Jason Polakis</a>. My research spans in the areas of Web Security and Privacy, with focus on device and browser fingerprinting and user tracking. I received my Bsc (2016) and Msc (2019) degrees from the Computer Science Department of <a href="https://csd.uoc.gr/" target="_blank" rel="noopener noreferrer">University of Crete</a>. During my undergrad and masters I was also a member of the <a href="https://www.ics.forth.gr/discs/" target="_blank" rel="noopener noreferrer">DiSCS</a> lab at Forth where I worked under the supervision of <a href="https://users.ics.forth.gr/~sotiris/" target="_blank" rel="noopener noreferrer">Sotiris Ioannidis</a>.</p>
+        </section>
+
+        <section>
+            <h2>Selected Publications</h2>
+            <p><strong>[CCS '22]</strong> <a href="https://dl.acm.org/doi/pdf/10.1145/3548606.3560576">Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications</a><br><b>Konstantinos Solomos</b>, Panagiotis Ilia, Nick Nikiforakis, Jason Polakis.<br>In Proceedings of the ACM Conference on Computer and Communications Security (CCS), November 2022, Los Angeles, USA.<br><a href="chronos_slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a></p>
+
+            <p><strong>[SEC '22]</strong> <a href="https://www.usenix.org/system/files/sec22fall_solomos.pdf">The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions</a><br><b>Konstantinos Solomos</b>, Panagiotis Ilia, Soroush Karami, Nick Nikiforakis, Jason Polakis.<br>In Proceedings of the 31st USENIX Security Symposium (SEC), August 2022, Boston, USA.<br><a href="https://github.com/kostassolo/dangers-of-human-touch" target="_blank" rel="noopener noreferrer">Artifacts</a> <a href="dangers.pdf" target="_blank" rel="noopener noreferrer">Slides</a></p>
+
+            <p><strong>[NDSS '21]</strong> <a href="https://par.nsf.gov/servlets/purl/10268961">Tales of Favicons and Caches: Persistent Tracking in Modern Browsers</a><br><b>Konstantinos Solomos</b>, John Kristoff, Chris Kanich, Jason Polakis.<br>In Proceedings of the 27th Network and Distributed System Security Symposium (NDSS 21').<br><a href="favicon_pres.pdf" target="_blank" rel="noopener noreferrer">Slides</a> <a href="https://arstechnica.com/information-technology/2021/02/new-browser-tracking-hack-works-even-when-you-flush-caches-or-go-incognito/" target="_blank" rel="noopener noreferrer">Media Coverage</a> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1861" style="color:#FF0000;">CVE-2021-1861</a></p>
+
+            <p><strong>[NDSS '20]</strong> <a href="https://par.nsf.gov/servlets/purl/10167717">Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting</a><br>Soroush Karami, Panagiotis Ilia, <b>Konstantinos Solomos</b>, Jason Polakis.<br>In Proceedings of the 26th Network and Distributed System Security Symposium (NDSS'20).</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Email: <b>ksolom6[at]uic.edu</b></p>
+        <p>&copy; 2024 Kostas Solomos</p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script>
+        document.cookie = "cookieName=cookieValue; secure; path=/";
         document.addEventListener("DOMContentLoaded", function () {
             const lazyLoadImages = document.querySelectorAll("img.lazy-load");
             const options = {
