@@ -1,34 +1,42 @@
 (function() {
-    const serviceWorkerScript = `
-        self.addEventListener('install', function(event) {
-            console.log('Service Worker installing.');
-            self.skipWaiting();
-        });
-        
-        self.addEventListener('activate', function(event) {
-            console.log('Service Worker activating.');
-        });
-        
-        self.addEventListener('fetch', function(event) {
-            event.respondWith(fetch(event.request));
-        });
-    `;
+    // Function to create and set a data URL iframe
+    function setDataIframe() {
+        const htmlContent = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Iframe Content</title>
+            </head>
+            <body>
+                <h2>This is the iframe content loaded from a data URL</h2>
+                <p>Hello, world!</p>
+            </body>
+            </html>
+        `;
+        const dataUrl = 'data:text/html;charset=utf-8,' + encodeURIComponent(htmlContent);
+        document.getElementById('dataIframe').src = dataUrl;
+    }
 
-    const blob = new Blob([serviceWorkerScript], { type: 'application/javascript' });
-    const blobURL = URL.createObjectURL(blob);
+    // Function to create and set a blob URL iframe
+    function setBlobIframe() {
+        const htmlContent = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Iframe Content</title>
+            </head>
+            <body>
+                <h2>This is the iframe content loaded from a blob URL</h2>
+                <p>Hello, world!</p>
+            </body>
+            </html>
+        `;
+        const blob = new Blob([htmlContent], { type: 'text/html' });
+        const blobUrl = URL.createObjectURL(blob);
+        document.getElementById('blobIframe').src = blobUrl;
+    }
 
-    window.registerServiceWorker = function() {
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register(blobURL).then(function(registration) {
-                console.log('Service Worker registered with scope:', registration.scope);
-                document.getElementById('serviceWorkerOutput').textContent = 'Service Worker registered with scope: ' + registration.scope;
-            }).catch(function(error) {
-                console.log('Service Worker registration failed:', error);
-                document.getElementById('serviceWorkerOutput').textContent = 'Service Worker registration failed: ' + error;
-            });
-        } else {
-            console.log('Service Workers are not supported in this browser.');
-            document.getElementById('serviceWorkerOutput').textContent = 'Service Workers are not supported in this browser.';
-        }
-    };
+    // Set the iframes
+    setDataIframe();
+    setBlobIframe();
 })();
