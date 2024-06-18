@@ -6,7 +6,7 @@ srcdocIframe.srcdoc = `
             <h2>This is srcdoc iframe</h2>
             <script>
                 console.log('srcdoc iframe origin:', window.origin);
-                console.log('srcdoc iframe cookies:', document.cookie);
+                console.log('srcdoc iframe cookies:', window.parent.document.cookie);
             </script>
         </body>
     </html>
@@ -20,7 +20,7 @@ const dataContent = `
             <h2>This is data iframe</h2>
             <script>
                 console.log('data iframe origin:', window.origin);
-                console.log('data iframe cookies:', document.cookie);
+                console.log('data iframe cookies:', window.parent.document.cookie);
             </script>
         </body>
     </html>
@@ -36,7 +36,7 @@ const blobContent = `
             <h2>This is blob iframe</h2>
             <script>
                 console.log('blob iframe origin:', window.origin);
-                console.log('blob iframe cookies:', document.cookie);
+                console.log('blob iframe cookies:', window.parent.document.cookie);
             </script>
         </body>
     </html>
