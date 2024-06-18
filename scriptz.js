@@ -1,45 +1,49 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Inject data URL iframe
-    (function() {
-        const dataIframe = document.createElement('iframe');
-        const dataContent = `
-            <html>
-            <body>
-                <script>
-                    window.addEventListener('message', function(event) {
-                        if (event.data === 'REGISTER_SW') {
-                            window.parent.postMessage('REGISTER_SW', '*');
-                        }
-                    });
-                    window.parent.postMessage('REGISTER_SW', '*');
-                </script>
-            </body>
-            </html>
-        `;
-        dataIframe.src = 'data:text/html;base64,' + btoa(dataContent);
-        document.body.appendChild(dataIframe);
-    })();
+// srcdoc iframe
+const srcdocIframe = document.createElement('iframe');
+srcdocIframe.srcdoc = `
+    <html>
+        <body>
+            <h2>This is srcdoc iframe</h2>
+            <script>
+                console.log('srcdoc iframe origin:', window.origin);
+                console.log('srcdoc iframe cookies:', document.cookie);
+            </script>
+        </body>
+    </html>
+`;
+document.body.appendChild(srcdocIframe);
 
-    // Inject blob URL iframe
-    (function() {
-        const blobContent = `
-            <html>
-            <body>
-                <script>
-                    window.addEventListener('message', function(event) {
-                        if (event.data === 'REGISTER_SW') {
-                            window.parent.postMessage('REGISTER_SW', '*');
-                        }
-                    });
-                    window.parent.postMessage('REGISTER_SW', '*');
-                </script>
-            </body>
-            </html>
-        `;
-        const blob = new Blob([blobContent], { type: 'text/html' });
-        const blobUrl = URL.createObjectURL(blob);
-        const blobIframe = document.createElement('iframe');
-        blobIframe.src = blobUrl;
-        document.body.appendChild(blobIframe);
-    })();
-});
+// data: iframe
+const dataContent = `
+    <html>
+        <body>
+            <h2>This is data iframe</h2>
+            <script>
+                console.log('data iframe origin:', window.origin);
+                console.log('data iframe cookies:', document.cookie);
+            </script>
+        </body>
+    </html>
+`;
+const dataIframe = document.createElement('iframe');
+dataIframe.src = 'data:text/html;base64,' + btoa(dataContent);
+document.body.appendChild(dataIframe);
+
+// blob iframe
+const blobContent = `
+    <html>
+        <body>
+            <h2>This is blob iframe</h2>
+            <script>
+                console.log('blob iframe origin:', window.origin);
+                console.log('blob iframe cookies:', document.cookie);
+            </script>
+        </body>
+    </html>
+`;
+const blob = new Blob([blobContent], { type: 'text/html' });
+const blobURL = URL.createObjectURL(blob);
+
+const blobIframe = document.createElement('iframe');
+blobIframe.src = blobURL;
+document.body.appendChild(blobIframe);
