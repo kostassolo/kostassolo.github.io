@@ -1,6 +1,14 @@
 // External script: modify-button.js
 
-// Add an additional event listener to the button
-document.getElementById('myButton').addEventListener('click', function() {
+// Function to replace the event listener
+function replaceEventListener(element, type, newListener) {
+    const oldListener = element['on' + type];
+    element.removeEventListener(type, oldListener);
+    element.addEventListener(type, newListener);
+}
+
+// Select the button and replace its click event listener
+const button = document.getElementById('myButton');
+replaceEventListener(button, 'click', function() {
     alert('Button has been modified and clicked!');
 });
