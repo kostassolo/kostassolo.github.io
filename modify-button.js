@@ -22,4 +22,4 @@ function modifyInlineScript() {
 }
 
 // Run the function to modify the inline script
-modifyInlineScript();
+// modifyInlineScript();
