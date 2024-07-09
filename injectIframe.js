@@ -4,7 +4,7 @@ function injectIframeWithBlob() {
     // Create the iframe element
     const iframe = document.createElement('iframe');
     iframe.style.width = '80%';
-    iframe.style.height = '300px';
+    iframe.style.height = '100x';
     iframe.style.border = '1px solid #ccc';
     iframe.style.marginTop = '1em';
 
