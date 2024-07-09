@@ -1,4 +1,6 @@
 function injectIframeWithBlob() {
+    console.log("Script loaded and injectIframeWithBlob called");
+
     // Create the iframe element
     const iframe = document.createElement('iframe');
     iframe.style.width = '100%';
@@ -15,7 +17,8 @@ function injectIframeWithBlob() {
             <title>First Party Iframe</title>
         </head>
         <body>
-            <p>Content served from a blob URL.</p>
+            <h1>Hello from Blob Iframe!</h1>
+            <p>This is content served from a blob URL.</p>
         </body>
         </html>
     `;
@@ -29,4 +32,6 @@ function injectIframeWithBlob() {
 
     // Append the iframe to the body
     document.body.appendChild(iframe);
+
+    console.log("Iframe injected with src:", blobURL);
 }
