@@ -4,12 +4,7 @@ function injectIframeWithBlob() {
     iframe.style.width = '100%';
     iframe.style.height = '500px';
     iframe.style.border = '1px solid #ccc';
-    let iframeContainer = document.getElementById('iframe-container');
-    if (!iframeContainer) {
-        iframeContainer = document.createElement('div');
-        iframeContainer.id = 'iframe-container';
-        document.body.appendChild(iframeContainer);
-    }
+    iframe.style.marginTop = '1em';
 
     // Create the HTML content for the iframe
     const iframeContent = `
@@ -29,6 +24,6 @@ function injectIframeWithBlob() {
     // Set the iframe's src to the blob URL
     iframe.src = blobURL;
 
-    // Append the iframe to the container
-    iframeContainer.appendChild(iframe);
+    // Append the iframe to the body
+    document.body.appendChild(iframe);
 }
