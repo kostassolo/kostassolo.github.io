@@ -14,6 +14,9 @@ function injectIframeWithBlob() {
             <meta charset="UTF-8">
             <title>First Party Iframe</title>
         </head>
+        <body>
+            <p>Content served from a blob URL.</p>
+        </body>
         </html>
     `;
 
