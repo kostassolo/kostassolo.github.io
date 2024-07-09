@@ -1,3 +1,4 @@
+function injectIframeWithBlob() {
     console.log("Script loaded and injectIframeWithBlob called");
 
     // Create the iframe element
@@ -46,4 +47,4 @@
     document.body.appendChild(iframe);
 
     console.log("Iframe injected with src:", blobURL);
-
+}
