@@ -2,12 +2,29 @@ function injectWorkerAndNotify() {
     const blob = new Blob([`
         onmessage = function(e) {
             if (e.data === 'start') {
-                self.postMessage('Web Worker started');
-                setTimeout(() => {
-                    self.postMessage('Notification from Web Worker');
-                }, 1000);
+                // Request notification permission
+                if (Notification.permission === 'default') {
+                    Notification.requestPermission().then(permission => {
+                        if (permission === 'granted') {
+                            sendNotification();
+                        } else {
+                            postMessage('Notification permission denied');
+                        }
+                    });
+                } else if (Notification.permission === 'granted') {
+                    sendNotification();
+                } else {
+                    postMessage('Notification permission denied');
+                }
             }
         };
+
+        function sendNotification() {
+            self.registration.showNotification('Notification from Web Worker', {
+                body: 'This is a notification from the Web Worker.'
+            });
+            postMessage('Notification sent from Web Worker');
+        }
     `], { type: 'application/javascript' });
 
     const worker = new Worker(URL.createObjectURL(blob));
