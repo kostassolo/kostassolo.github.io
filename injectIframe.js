@@ -3,8 +3,8 @@ function injectIframeWithBlob() {
 
     // Create the iframe element
     const iframe = document.createElement('iframe');
-    iframe.style.width = '100%';
-    iframe.style.height = '500px';
+    iframe.style.width = '80%';
+    iframe.style.height = '300px';
     iframe.style.border = '1px solid #ccc';
     iframe.style.marginTop = '1em';
 
@@ -15,10 +15,23 @@ function injectIframeWithBlob() {
         <head>
             <meta charset="UTF-8">
             <title>First Party Iframe</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                }
+                .content {
+                    padding: 1em;
+                }
+            </style>
         </head>
         <body>
-            <h1>Hello from Blob Iframe!</h1>
-            <p>This is content served from a blob URL.</p>
+            <div class="content">
+                <h1>Hello from Blob Iframe!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
         </body>
         </html>
     `;
