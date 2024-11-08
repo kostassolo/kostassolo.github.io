@@ -16,7 +16,7 @@ Prior to my Ph.D., I earned my undergraduate and graduate degrees from the [Univ
 
 Selected Publications
 ======
-**[ACSAC '24] [Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations](/files/acsac)**<span style="color:red"> Available soon </span>
+**[ACSAC '24] [Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations](/files/acsac) <span style="color:red"> Available soon </span>**
 **Konstantinos Solomos**, Nick Nikiforakis, Jason Polakis]  
 *In Proceedings of the Annual Computer Security Applications Conference, December 2024, Hawai, USA.*  
 
@@ -28,14 +28,14 @@ Selected Publications
 
 ---
 
-**[SEC '22] [The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions](/file/dangers.pdf)**  
+**[SEC '22] [<a href="/files/dangers.pdf" target="_blank" rel="noopener noreferrer">The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions]**  
 **Konstantinos Solomos**, Panagiotis Ilia, Soroush Karami, Nick Nikiforakis, Jason Polakis.  
 *In Proceedings of the 31st USENIX Security Symposium (SEC), Boston, USA.*  
 [Artifacts](https://github.com/kostassolo/dangers-of-human-touch)  
 
 ---
 
-**[NDSS '21] [Tales of Favicons and Caches: Persistent Tracking in Modern Browsers](/files/favicon.pdf)**  
+**[NDSS '21] [<a href="/files/favicon.pdf" target="_blank" rel="noopener noreferrer">Tales of Favicons and Caches: Persistent Tracking in Modern Browsers]**  
 **Konstantinos Solomos**, John Kristoff, Chris Kanich, Jason Polakis.  
 *In Proceedings of the 27th Network and Distributed System Security Symposium (Online).*  
 [Presentation](https://youtu.be/Pm9md32t7Oo)
@@ -44,6 +44,6 @@ Selected Publications
 
 ---
 
-**[NDSS '20] [Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting](/files/carnus.pdf)**  
+**[NDSS '20] [<a href="/files/carnus.pdf" target="_blank" rel="noopener noreferrer">Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting]**  
 Soroush Karami, Panagiotis Ilia, **Konstantinos Solomos**, Jason Polakis.  
 *In Proceedings of the 26th Network and Distributed System Security Symposium.*
