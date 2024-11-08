@@ -21,7 +21,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "me.jpg"
   name             : "Kostas Solomos"
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate in Computer Science"
@@ -31,9 +31,9 @@ author:
   email            : "ksolom6@uic.edu" 
 
   # Academic websites
-  arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   CV               : "/files/cv.pdf"
+  linkedin         : "https://www.linkedin.com/in/kostas-solomos-514715128/"
 
 
 # Publication Category - The following the list of publication categories and their headings
