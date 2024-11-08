@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Kostas Solomos"
+title                    : "About"
 title_separator          : "-"
 name                     : &name "Kostas Solomos"
 description              : &description "personal description"
@@ -23,7 +23,6 @@ author:
   # Biographic information
   avatar           : "me.jpg"
   name             : "Kostas Solomos"
-  pronouns         : # example: "she/her"  
   bio              : "PhD Candidate in Computer Science"
   location         : "Chicago"
   employer         : "University of Illinois-Chicago"
