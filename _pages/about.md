@@ -38,10 +38,8 @@ Selected Publications
 **[NDSS '21] [Tales of Favicons and Caches: Persistent Tracking in Modern Browsers](/files/favicon.pdf)**  
 **Konstantinos Solomos**, John Kristoff, Chris Kanich, Jason Polakis.  
 *In Proceedings of the 27th Network and Distributed System Security Symposium (Online).*  
-[Presentation](https://youtu.be/Pm9md32t7Oo)
-
-[Media Coverage](https://arstechnica.com/information-technology/2021/02/new-browser-tracking-hack-works-even-when-you-flush-caches-or-go-incognito/) 
- 
+<!-- [Presentation](https://youtu.be/Pm9md32t7Oo) -->
+[Media Coverage](https://arstechnica.com/information-technology/2021/02/new-browser-tracking-hack-works-even-when-you-flush-caches-or-go-incognito/)  
 [CVE-2021-1861](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1861)
 
 ---
