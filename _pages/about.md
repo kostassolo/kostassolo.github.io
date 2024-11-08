@@ -16,36 +16,34 @@ Prior to my Ph.D., I earned my undergraduate and graduate degrees from the [Univ
 
 Selected Publications
 ======
-
-**[ACSAC '24] Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations**  
-**Konstantinos Solomos**, Nick Nikiforakis, Jason Polakis  
-*In Proceedings of the Annual Computer Security Applications Conference, December 2024, Hawai, USA.*
-
----
-
-**[CCS '22] [Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications](</files/chronos.pdf){:target="_blank" rel="noopener noreferrer"}**  
-**Konstantinos Solomos**, Panagiotis Ilia, Nick Nikiforakis, Jason Polakis  
-*In Proceedings of the ACM Conference on Computer and Communications Security, Los Angeles, USA.*
+**[ACSAC '24] [Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations]**
+**Konstantinos Solomos**, Nick Nikiforakis, Jason Polakis]  
+*In Proceedings of the Annual Computer Security Applications Conference, December 2024, Hawai, USA.*  
 
 ---
 
-**[SEC '22] [The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions](</files/dangers.pdf){:target="_blank" rel="noopener noreferrer"}**  
-**Konstantinos Solomos**, Panagiotis Ilia, Soroush Karami, Nick Nikiforakis, Jason Polakis  
+**[CCS '22] [<a href="/files/chronos.pdf" target="_blank" rel="noopener noreferrer">Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications</a>]**  
+**Konstantinos Solomos**, Panagiotis Ilia, Nick Nikiforakis, Jason Polakis.  
+*In Proceedings of the ACM Conference on Computer and Communications Security,  Los Angeles, USA.*  
+
+---
+
+**[SEC '22] [The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions](/file/dangers.pdf)**  
+**Konstantinos Solomos**, Panagiotis Ilia, Soroush Karami, Nick Nikiforakis, Jason Polakis.  
 *In Proceedings of the 31st USENIX Security Symposium (SEC), Boston, USA.*  
-[Artifacts](https://github.com/kostassolo/dangers-of-human-touch)
+[Artifacts](https://github.com/kostassolo/dangers-of-human-touch)  
 
 ---
 
-**[NDSS '21] [Tales of Favicons and Caches: Persistent Tracking in Modern Browsers](</files/favicon.pdf){:target="_blank" rel="noopener noreferrer"}**  
-**Konstantinos Solomos**, John Kristoff, Chris Kanich, Jason Polakis  
+**[NDSS '21] [Tales of Favicons and Caches: Persistent Tracking in Modern Browsers](/files/favicon.pdf)**  
+**Konstantinos Solomos**, John Kristoff, Chris Kanich, Jason Polakis.  
 *In Proceedings of the 27th Network and Distributed System Security Symposium (Online).*  
-[Presentation](https://youtu.be/Pm9md32t7Oo)  
+[Presentation](https://youtu.be/Pm9md32t7Oo)
 [Media Coverage](https://arstechnica.com/information-technology/2021/02/new-browser-tracking-hack-works-even-when-you-flush-caches-or-go-incognito/)  
 [CVE-2021-1861](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1861)
 
 ---
 
-**[NDSS '20] [Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting](</files/carnus.pdf){:target="_blank" rel="noopener noreferrer"}**  
-Soroush Karami, Panagiotis Ilia, **Konstantinos Solomos**, Jason Polakis  
+**[NDSS '20] [Carnus: Exploring the Privacy Threats of Browser Extension Fingerprinting](/files/carnus.pdf)**  
+Soroush Karami, Panagiotis Ilia, **Konstantinos Solomos**, Jason Polakis.  
 *In Proceedings of the 26th Network and Distributed System Security Symposium.*
-
