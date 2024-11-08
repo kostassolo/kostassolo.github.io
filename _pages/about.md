@@ -20,8 +20,10 @@ Selected Publications
 
 **[ACSAC '24]** <a href="/files/ACSAC.pdf" target="_blank" rel="noopener noreferrer">Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations</a>  
 **Konstantinos Solomos**, Nick Nikiforakis, Jason Polakis  
-*In Proceedings of the ACM Conference on Computer and Communications Security, Los Angeles, USA.*
-
+*In Proceedings of the Annual Computer Security Applications Conference, December 2024, Hawai, USA.**
+<!-- **[ACSAC '24]** <a href="/files/acsac.pdf" target="_blank" rel="noopener noreferrer">Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations</a>  
+**Konstantinos Solomos**, Nick Nikiforakis, Jason Polakis  
+*In Proceedings of the Annual Computer Security Applications Conference, December 2024, Hawai, USA.* -->
 
 ---
 
