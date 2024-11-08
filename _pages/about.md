@@ -17,8 +17,9 @@ Prior to my Ph.D., I earned my undergraduate and graduate degrees from the [Univ
 Selected Publications
 ======
 **[ACSAC '24][Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations](/files/acsac)**
-[Konstantinos Solomos](#), Nick Nikiforakis, Jason Polakis.  
+[Konstantinos Solomos](#), Nick Nikiforakis, Jason Polakis]  
 *In Proceedings of the Annual Computer Security Applications Conference, December 2024,Hawai, USA.*  
+
 ---
 
 **[CCS '22][Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications](/files/chronos.pdf)**  
