@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "About"
+title                    : "Kostas Solomos"
 title_separator          : "-"
 name                     : &name "Kostas Solomos"
 description              : &description "personal description"
