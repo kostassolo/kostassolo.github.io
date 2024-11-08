@@ -35,7 +35,7 @@ Selected Publications
 
 **[SEC '22]** <a href="/files/dangers.pdf" target="_blank" rel="noopener noreferrer">The Dangers of Human Touch: Fingerprinting Browser Extensions through User Actions</a>  
 **Konstantinos Solomos**, Panagiotis Ilia, Soroush Karami, Nick Nikiforakis, Jason Polakis  
-*In Proceedings of the 31st USENIX Security Symposium (SEC), Boston, USA.*  
+*In Proceedings of the 31st USENIX Security Symposium, Boston, USA.*  
 [Artifacts](https://github.com/kostassolo/dangers-of-human-touch)
 
 ---
