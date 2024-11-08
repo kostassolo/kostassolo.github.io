@@ -13,12 +13,17 @@ My research interests include web security and privacy attacks and mitigations, 
 Prior to my Ph.D., I earned my undergraduate and graduate degrees from the [University of Crete](https://csd.uoc.gr), where I also worked as a graduate research assistant at [FORTH](https://ics.forth.gr).
 
 <span style="color:red">I am on the academic job market. Please feel free to reach out if you'd like to discuss my research, potential collaborations, or academic opportunities!</span>
+
+
 Selected Publications
 ======
 
-**[ACSAC '24]** <a href="/files/acsac.pdf" target="_blank" rel="noopener noreferrer">Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations</a>  
+**[CCS '22]** <a href="/files/chronos.pdf" target="_blank" rel="noopener noreferrer">Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications</a>  
+**Konstantinos Solomos**, Panagiotis Ilia, Nick Nikiforakis, Jason Polakis  
+*In Proceedings of the ACM Conference on Computer and Communications Security, Los Angeles, USA.*
+<!-- **[ACSAC '24]** <a href="/files/acsac.pdf" target="_blank" rel="noopener noreferrer">Harnessing Multiplicity: Granular Browser Extension Fingerprinting through User Configurations</a>  
 **Konstantinos Solomos**, Nick Nikiforakis, Jason Polakis  
-*In Proceedings of the Annual Computer Security Applications Conference, December 2024, Hawai, USA.*
+*In Proceedings of the Annual Computer Security Applications Conference, December 2024, Hawai, USA.* -->
 
 ---
 
